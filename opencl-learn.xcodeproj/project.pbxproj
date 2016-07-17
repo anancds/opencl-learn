@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A47F00E1D3744D3000D0B9D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2A47F00D1D3744D3000D0B9D /* main.c */; };
+		2A47F0191D3B5275000D0B9D /* myKernel.cl in Sources */ = {isa = PBXBuildFile; fileRef = 2A47F0181D3B5275000D0B9D /* myKernel.cl */; };
+		2A47F0231D3B58DC000D0B9D /* myHost.c in Sources */ = {isa = PBXBuildFile; fileRef = 2A47F0221D3B58DC000D0B9D /* myHost.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,10 @@
 
 /* Begin PBXFileReference section */
 		2A47F00A1D3744D3000D0B9D /* opencl-learn */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "opencl-learn"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A47F00D1D3744D3000D0B9D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		2A47F00D1D3744D3000D0B9D /* deviceQuery.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = deviceQuery.c; sourceTree = "<group>"; };
+		2A47F0181D3B5275000D0B9D /* myKernel.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = myKernel.cl; sourceTree = "<group>"; };
+		2A47F01C1D3B542F000D0B9D /* deviceQuery1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = deviceQuery1.c; path = ../deviceQuery1.c; sourceTree = "<group>"; };
+		2A47F0221D3B58DC000D0B9D /* myHost.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = myHost.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 		2A47F0011D3744D3000D0B9D = {
 			isa = PBXGroup;
 			children = (
+				2A47F0141D3B51A7000D0B9D /* HelloWorld */,
 				2A47F00C1D3744D3000D0B9D /* opencl-learn */,
 				2A47F00B1D3744D3000D0B9D /* Products */,
 			);
@@ -57,9 +62,19 @@
 		2A47F00C1D3744D3000D0B9D /* opencl-learn */ = {
 			isa = PBXGroup;
 			children = (
-				2A47F00D1D3744D3000D0B9D /* main.c */,
+				2A47F01C1D3B542F000D0B9D /* deviceQuery1.c */,
+				2A47F00D1D3744D3000D0B9D /* deviceQuery.c */,
 			);
 			path = "opencl-learn";
+			sourceTree = "<group>";
+		};
+		2A47F0141D3B51A7000D0B9D /* HelloWorld */ = {
+			isa = PBXGroup;
+			children = (
+				2A47F0181D3B5275000D0B9D /* myKernel.cl */,
+				2A47F0221D3B58DC000D0B9D /* myHost.c */,
+			);
+			name = HelloWorld;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +133,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A47F00E1D3744D3000D0B9D /* main.c in Sources */,
+				2A47F0231D3B58DC000D0B9D /* myHost.c in Sources */,
+				2A47F0191D3B5275000D0B9D /* myKernel.cl in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
